@@ -8,7 +8,7 @@ import TheWelcome from './components/TheWelcome.vue'
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="自动化部署成功!" />
+      <HelloWorld msg="测试执行自动化部署!" />
     </div>
   </header>
 
