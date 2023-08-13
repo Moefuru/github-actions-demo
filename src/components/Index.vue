@@ -8,7 +8,13 @@
         @input="filterTableData"
     >
       <template #prepend>
-        <el-select v-model="select" clearable="true" placeholder="分类" style="width: 115px">
+        <el-select
+            v-model="select"
+            clearable="true"
+            placeholder="分类"
+            style="width: 115px"
+            @change="filterTableData"
+        >
           <el-option
               v-for="item in categoryData"
               :key="item.id"
@@ -46,7 +52,7 @@
 
 
 <script setup lang="ts">
-import {ref,onMounted} from 'vue'
+import {ref, onMounted} from 'vue'
 import {Search} from '@element-plus/icons-vue'
 import axios from "axios";
 
